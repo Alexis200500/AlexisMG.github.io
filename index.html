@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexis Morales Gómez</title>
+    <link
+      rel="shortcut icon"
+      href="images/foto-inicio.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.2.1-web/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.2.1-web/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.2.1-web/css/solid.css"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+      integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+  </head>
+  <body>
+    <!-- MENU -->
+    <section class="menu" id="menu">
+      <div class="menu-contenido" id="menu-contenido">
+        <header>
+          <div class="logo">
+            <i class="fa-regular fa-code"></i>
+            <h1>Alexis</h1>
+          </div>
+
+          <nav id="nav" class="nav">
+            <a href="#inicio" onclick="seleccionar()">Inicio</a>
+            <a href="#sobre-mi" onclick="seleccionar()">Sobre mi</a>
+            <a href="#habilidades" onclick="seleccionar()">Habilidades</a>
+            <a href="#proyectos" onclick="seleccionar()">Proyectos</a>
+            <a href="#inicio">Contacto</a>
+          </nav>
+
+          <div id="icono-nav" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+      <div class="inicio-contenido">
+        <div class="imagen-container">
+          <img src="images/Alexis.jpg" alt="Alexis Morales Gómez" />
+        </div>
+        <h2>Alexis Morales Gómez.</h2>
+        <h3>Ingeniero en Desarrollo y Gestión de Software.</h3>
+
+        <div class="redes-sociales">
+          <nav>
+            <a href="https://www.facebook.com/profile.php?id=100003953197992" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/alexis-morales-g%C3%B3mez-b23141239/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/527228032683" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/Alexis200500" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:alexis.morgomez20@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="sobre-mi" id="sobre-mi">
+      <div class="sobre-mi-contenido" id="sobre-mi-contenido">
+        <div class="text">
+          <h4>Sobre Mi</h4>
+          <p>Soy egresado de la Universidad Tecnológica del Valle de Toluca en la carrera de Ingeniería en Desarrollo y Gestión de Software, actualmente me considero trainee/junior, soy apasionado en mi profesión por lo que estoy en búsqueda de una oportunidad laboral en la que pueda demostrar mis habilidades académicas y profesionales aprendidas. Soy una persona con excelente capacidad de organización y facilidad de trabajar en equipo e individual. Soy una persona en la que ha trabajado más en la parte del back-end pero también puedo manejar front-end ya que me gusta mucho aprender y siempre se aprende algo nuevo.</p>          
+          <button class="descargar">
+            <i class="fa-solid fa-download"></i>
+            <a href="https://drive.google.com/file/d/1JQWUjK-5JW_a5N_UkXwk2XpLT5kuK-71/view?usp=share_link" download="https://drive.google.com/file/d/1JQWUjK-5JW_a5N_UkXwk2XpLT5kuK-71/view?usp=share_link" target="_blank">Descargar CV</a>
+          </button>
+        </div>
+        <div class="imagen-computadora">
+          <img src="images/foto-inicio.png" alt="Computadora" />
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+      <div class="contenedor-habi">
+        <h4>Habilidades</h4>
+        <div class="fila">
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart chart1" data-percent="65">65%</div>
+                <h2>HTML & CSS</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart chart2" data-percent="50">50%</div>
+                <h2>BOOTSTRAP</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart chart3" data-percent="60">60%</div>
+                <h2>JavaScript</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart chart4" data-percent="60">60%</div>
+                <h2>MySQL</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart chart5" data-percent="50">50%</div>
+                <h2>PHP</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart chart6" data-percent="70">70%</div>
+                <h2>Laravel</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart chart4" data-percent="50">50%</div>
+                <h2>Git y GitHub</h2>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="proyectos" id="proyectos">
+      <h4>Proyectos</h4>
+      <div class="proyectos-contenido">
+          <div class="item">
+            <img src="images/proyecto1.png" alt="" />
+            <div class="info">
+              <h4>Proyecto de CRUD, recuperación de contraseñas por c orreo electronico, Exportación en PDF y Excel y Importación en Excel</h4>
+              <span>Laravel</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <a href="https://github.com/Alexis200500/Alquiladora.git" target="_blank">Ver código</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/proyecto2.png" alt="" />
+            <div class="info">
+              <h4>Proyecto de SmartSite Healt Server</h4>
+              <span>Laravel</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <a href="#" target="_blank">Ver código</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/proyecto3.png" alt="" />
+            <div class="info">
+              <h4>Proyecto de estadias SmartSite Ayuntamiento de San Mateo Atenco y Opdapas</h4>
+              <span>Laravel</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <a href="#" target="_blank">Ver código</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/proyecto4.png" alt="" />
+            <div class="info">
+              <h4>Proyecto de integradora 5° Cuatrimestre</h4>
+              <span>Laravel</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <a href="#" target="_blank">Ver código</a>
+            </div>
+          </div>          
+      </div>
+    </section>
+     
+    <footer>
+      <p>Creado por Alexis Morales Gómez | &#169 2023</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

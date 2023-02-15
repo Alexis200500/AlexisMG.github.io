@@ -1,0 +1,471 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #333;
+  color: #fff;
+
+}
+
+.menu{
+  background-color: #191654;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu .menu-contenido{
+ margin: auto; 
+}
+
+.menu header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+
+}
+
+.menu .menu-contenido .logo{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.menu .menu-contenido .logo i{
+  display: inline-block;
+  margin-right: 20px;
+}
+.menu .menu-contenido .logo h1{
+  font-size: 30px;
+}
+
+.menu .menu-contenido header nav a{
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid transparent;
+}
+#menu header nav a:hover{
+  border-bottom:4px solid #fff;
+}
+
+#icono-nav{
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+  display: none;
+}
+#icono-nav:hover{
+  background-color: #3e3e3e;
+}
+
+
+/* INICIO */
+.inicio{
+  background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+	url('/images/foto-contacto.png');
+	background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.inicio .inicio-contenido {
+  /* background-color: #333; */
+  margin-top: 50px;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.inicio .inicio-contenido .imagen-container img{
+  border-radius: 50%;
+  width: 350px;
+  height:350px;
+}
+
+.inicio .inicio-contenido h2 , h3{
+  font-size: 25px;
+}
+
+.inicio .inicio-contenido .redes-sociales{
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.inicio .inicio-contenido .redes-sociales a{
+  color: #fff;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px solid red; */
+  padding: 10px;
+  border-radius: 30px ;
+  
+}
+.inicio .inicio-contenido .redes-sociales a:hover{
+  background-color: red;
+}
+
+/* Sobre mi */
+.sobre-mi{
+  background:linear-gradient(to bottom, #191654, #43c6ac);
+  padding: 40px;
+}
+
+.sobre-mi .sobre-mi-contenido{
+  display: flex;
+  /* background-color: blue; */
+  padding: 40px;
+}
+.sobre-mi .sobre-mi-contenido h4{
+  font-size: 30px;
+}
+.sobre-mi .sobre-mi-contenido .text{
+font-size: 17px;
+  /* border: 2px solid red; */
+}
+
+.sobre-mi .sobre-mi-contenido .text button{
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #1e272e;
+  margin-top: 10px;
+  padding: 14px;
+  
+}
+.sobre-mi .sobre-mi-contenido .text button i,a{
+  color: #fff;
+  text-decoration: none;
+}
+.sobre-mi .sobre-mi-contenido .text button:focus{
+  background-color: rgb(195, 35, 11);
+	z-index: .4;
+	transition:3s;
+}
+
+.sobre-mi .sobre-mi-contenido .imagen-computadora img{
+  width: 600px;
+  height:450px;
+}
+
+
+/* seccion HABILIDADES */
+.habilidades{
+  background:linear-gradient(to right, #000c76, #007be5);  
+  color: #fff;
+  padding: 60px 0;
+  /* position: static; */
+  top: -100px;
+}
+.habilidades h4{
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+.habilidades .contenedor-habi{
+  max-width: 1100px;
+  margin: auto;
+}
+.habilidades .fila{
+  display: flex;
+  justify-content: space-around;
+}
+.score{
+  padding: 10px;
+  margin: auto 0;
+}
+.score .box{
+  width: 100%;
+}
+.score .box h2{
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+.score .box .chart{
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  line-height: 160px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Esta clase se genera dinámicamente por la librera para graficos */
+.score .box canvas{
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* Proyectos */
+.proyectos{
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.proyectos h4{
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.proyectos .proyectos-contenido .item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.proyectos .proyectos-contenido{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(430px, 1fr));
+  grid-gap: 30px;
+}
+
+.proyectos .proyectos-contenido .item{
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #8d8d8d;
+  border-radius: 10px;
+}
+
+.proyectos .proyectos-contenido .item .info{
+  position:absolute;
+  top: -100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.proyectos .proyectos-contenido .item .info h4{
+  color: white;
+  background-color: #006CBE;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  opacity:0.2px;
+  margin-bottom: 20px;
+}
+
+.proyectos .proyectos-contenido .item .info span{
+  color: white;
+  display: inline-block;
+  background-color:#006CBE;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #8d8d8d;
+  margin: 0 3px;
+  padding: 0 5px;
+}
+
+.proyectos .proyectos-contenido .item .info a{
+  display: block;
+  margin: 20px auto;
+  background-color:#006CBE;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100px;
+}
+
+.proyectos .proyectos-contenido .item:hover .info{
+  opacity: 1;
+  top: 0;
+}
+
+
+footer{
+  margin-top: 30px;
+  background-color: #000;
+  color: #fff;
+  padding: 7px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* PAGINA RESPONSIVA */
+@media screen and (max-width:1180px){
+  .menu{
+      clip-path: none;
+  }
+}
+@media screen and (max-width:800px){  
+  #nav{
+      display: none;
+  }
+  #nav.responsive{
+      background-color: rgba(0,0,0,.9);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 99;
+  }
+  #nav.responsive a{
+      font-size: 30px;
+  }
+  #icono-nav{
+      display: block;
+  }
+  
+  .inicio .inicio-contenido .imagen-container img{
+    border-radius: 50%;
+    width: 300px;
+    height:300px;
+  }
+  
+  .inicio .inicio-contenido .redes-sociales{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .inicio .inicio-contenido .redes-sociales a{
+    color: #fff;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid red; */
+    padding: 10px;
+    border-radius: 30px ;
+    
+  }
+  .inicio .inicio-contenido .redes-sociales a:hover{
+    background-color: red;
+  }
+
+
+  
+  
+  /* Proyectos */
+  .proyectos .proyectos-contenido .item{
+    width: 400px;
+    height: 300px;
+  }
+    
+  .proyectos .proyectos-contenido .item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .proyectos .proyectos-contenido{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(430px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .proyectos .proyectos-contenido .item .info{
+    position:absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+  }
+  
+  .proyectos .proyectos-contenido .item .info h4{
+    color: white;
+    background-color: #006CBE;
+
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    opacity:0.2px;
+    margin-bottom: 20px;
+  }
+  
+  .proyectos .proyectos-contenido .item .info span{
+    color: white;
+    display: inline-block;
+    background-color:#006CBE;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #8d8d8d;
+    margin: 0 3px;
+    padding: 0 5px;
+  }
+  
+  .proyectos .proyectos-contenido .item .info a{
+    display: block;
+    font-size: 15px;
+    margin: 20px auto;
+    background-color:#006CBE;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100px;
+  }
+
+
+
+
+  /* Sobre mi */
+  /* .sobre-mi{
+    margin: 0;
+  } */
+  .sobre-mi .sobre-mi-contenido{
+    display: grid;
+  }
+ 
+  .sobre-mi .sobre-mi-contenido .text p{
+    font-size: 15px;
+  }
+  
+  .sobre-mi .sobre-mi-contenido .imagen-computadora img{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .habilidades{
+      position: static;
+      padding: 60px 0px;
+
+  }
+  .habilidades .fila{
+      display: block;
+      margin-bottom: 0;
+  }
+  .habilidades .fila .col{
+      width: 70%;
+      margin: auto;
+  }
+
+  .trabajos nav a{
+      margin: 0 5px;
+  }
+
+}
